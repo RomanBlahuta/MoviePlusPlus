@@ -31,5 +31,26 @@
 .fav-item-title {
   font-family: 'Suez One', serif;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 35px;
+}
+
+.back-to-list {
+  width: 26%;
+  margin-left: 37%;
+  margin-top: 20px;
+  font-weight: bold;
+}
+.back-to-list:hover {
+  background-color: #59a2e5;
+}
+
+
+.display-movie-info {
+  color: black;
+  cursor: pointer;
+}
+
+.display-movie-info:hover {
+  text-decoration: none;
+  color: dimgray;
 }

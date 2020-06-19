@@ -6,7 +6,7 @@
   <div *ngIf="valid && !displayData" class="recommendation-container">
     <mat-card class="recommendation">
 
-      <a (click)="onGoToMovie()">
+      <a class="display-movie-info" (click)="onGoToMovie()">
         <img height="70px" alt="No Poster" src="{{ this.movieObj['Poster'] }}" style="float: left;">
       </a>
 
