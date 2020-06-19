@@ -1,0 +1,65 @@
+.search-heading {
+  font-family: 'Suez One', serif;
+  color: dodgerblue;
+  text-align: center;
+}
+
+.search-top-heading {
+  font-size: 70px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.search-sub-heading {
+  margin-bottom: 40px;
+  color: forestgreen;
+  font-size: 20px;
+}
+
+.movie-input {
+  margin-left: 35%;
+  width: 30%!important;
+  height: 60px!important;
+  font-size: 30px;
+  color: #30363d;
+}
+
+.recommendation-container {
+  margin-left: 35%;
+}
+
+.recommendation {
+  width: 46%;
+  overflow: auto;
+}
+
+.rec-info {
+  font-size: 30px;
+  float: right;
+  padding-top: 10px;
+  line-height: 35px;
+}
+
+.back-to-search {
+  width: 26%;
+  margin-left: 37%;
+  margin-top: 20px;
+}
+.back-to-search:hover {
+  background-color: #59a2e5;
+}
+
+.fav-btn-container {
+  float: left;
+  margin: 20px;
+}
+
+.display-movie-info {
+  color: black;
+  cursor: pointer;
+}
+
+.display-movie-info:hover {
+  text-decoration: none;
+  color: dimgray;
+}

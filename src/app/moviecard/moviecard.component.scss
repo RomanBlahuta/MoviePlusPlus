@@ -1,0 +1,77 @@
+@import "https://fonts.googleapis.com/css2?family=Fjalla+One&family=Suez+One&display=swap";
+
+.movie-card {
+  width: 50%;
+  margin-left: 25%;
+  margin-bottom: 2%;
+  margin-top: 20px;
+  overflow: auto;
+  padding: 0;
+}
+
+.movie-card-title {
+  font-family: 'Suez One', serif;
+  font-size: 55px;
+  padding: 25px 0 30px 20px;
+  color: #ffffff;
+  background-color: #59a2e5;
+}
+
+.movie-param {
+  font-weight: bold;
+  color: #1362af;
+}
+
+.movie-awards {
+  font-weight: bold;
+  color: goldenrod;
+}
+
+.movie-staff {
+  font-weight: bold;
+  color: forestgreen;
+}
+
+.movie-title {
+  padding: 30px 0 10px 20px;
+  font-size: 45px;
+  color: black;
+  font-family: 'Fjalla One', sans-serif;
+  line-height: 50px;
+}
+
+/*.plot-title {
+  border-bottom: orangered dotted 3px;
+}*/
+
+img:hover {
+  cursor: pointer;
+}
+
+.movie-data {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  font-size: 25px;
+  color: #30363d;
+  line-height: 40px;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.favorite-icon {
+  width: 30px;
+  height: 30px;
+}
+
+/*.mat-unfav {
+  color: #c9c8c8;
+}
+
+.mat-fav {
+  background-color: deeppink;
+}*/
+
+.fav-btn-container {
+  float: right;
+  margin-right: 20px;
+}

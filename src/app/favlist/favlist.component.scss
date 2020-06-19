@@ -1,0 +1,35 @@
+.fav-list-card {
+  width: 54%;
+  margin-left: 23%;
+  padding: 0;
+  margin-top: 25px;
+}
+
+.fav-list-title {
+  font-family: 'Suez One', serif;
+  font-size: 45px;
+  padding: 25px 0 30px 20px;
+  color: #ffffff;
+  background-color: magenta;
+}
+
+.fav-item {
+  overflow: auto;
+  border-bottom: #30363d solid 1px;
+}
+
+.fav-list {
+  overflow: auto;
+}
+
+.fav-btn-container {
+  float: right;
+  padding-right: 20px;
+  padding-bottom: 25px;
+}
+
+.fav-item-title {
+  font-family: 'Suez One', serif;
+  font-weight: bold;
+  font-size: 25px;
+}

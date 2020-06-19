@@ -1,0 +1,31 @@
+@import "https://fonts.googleapis.com/css2?family=Fjalla+One&family=Suez+One&display=swap";
+
+.app-header {
+  overflow: auto;
+  padding: 20px 0 10px 0;
+  background-color: white;
+  margin: 0;
+  border-bottom: mediumblue solid 3px;
+}
+
+.app-header-text {
+  font-family: 'Suez One', serif;
+  width: fit-content;
+  font-weight: bold;
+  color: dodgerblue;
+  margin-left: 40px;
+  margin-top: 30px;
+  padding-bottom: 10px;
+  font-size: 440px;
+}
+
+/*
+hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 98%;
+  background-color: forestgreen;
+  height: 2px;
+}
+*/

@@ -1,0 +1,28 @@
+.side-nav-container {
+  position: absolute;
+  top: 170px;
+  left: 30px;
+}
+
+.side-nav-title {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 48px;
+  color: dodgerblue;
+  font-weight: bold;
+}
+
+.app-nav-btn {
+  width: 285px!important;
+  min-width: unset!important;
+  height: 55px!important;
+  min-height: unset!important;
+  padding-top: 7px;
+  font-size: 30px;
+  font-family: 'Suez One', serif;
+  margin-top: 20px;
+}
+
+.app-nav-btn:hover {
+  background-color: #59a2e5;
+  text-decoration: none;
+}

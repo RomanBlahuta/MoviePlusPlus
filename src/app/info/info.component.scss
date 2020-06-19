@@ -1,0 +1,38 @@
+.info-card {
+  width: 54%;
+  margin-left: 23%;
+  padding: 0;
+  margin-top: 25px;
+}
+
+.app-card-title {
+  font-family: 'Suez One', serif;
+  font-size: 45px;
+  padding: 25px 0 30px 20px;
+  color: #ffffff;
+  background-color: blueviolet;
+}
+
+.app-title {
+  padding: 30px 0 10px 20px;
+  font-size: 45px;
+  color: black;
+  font-family: 'Fjalla One', sans-serif;
+  line-height: 50px;
+}
+
+.info-text {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 30px 10px 10px 20px;
+}
+
+.app-link {
+  font-family: 'Suez One', serif;
+}
+
+.app-link:hover {
+  color: forestgreen;
+  text-decoration: none;
+}

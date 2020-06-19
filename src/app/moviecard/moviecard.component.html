@@ -1,0 +1,53 @@
+<mat-card class="movie-card">
+  <mat-card-title class="movie-card-title">Movie Info</mat-card-title>
+
+  <!--<mat-divider [inset]="true"></mat-divider>-->
+  <div class="fav-btn-container">
+    <button mat-fab color={{btnStatus}} (click)="onFavorite()"><mat-icon>{{btnIcon}}</mat-icon></button>
+  </div>
+
+  <mat-card-subtitle class="movie-title">{{ this.movieData['Title'] }}</mat-card-subtitle>
+
+  <mat-divider [inset]="true"></mat-divider>
+
+  <mat-tab-group>
+    <mat-tab label="Info">
+
+      <img alt="Missing the poster picture" src="{{ this.movieData['Poster'] }}" style="float: right;margin: 20px">
+      <p class="movie-data">
+        <span class="movie-param">Release date</span>: {{ this.movieData['Released'] }}<br />
+        <span class="movie-param">Genres</span>: {{ this.movieData['Genre'] }}<br />
+        <span class="movie-param">Rated</span>: {{ this.movieData['Rated'] }}<br />
+        <span class="movie-param">Runtime</span>: {{ this.movieData['Runtime'] }}<br />
+        <span class="movie-param">Production</span>: {{ this.movieData['Production'] }}<br />
+        <span class="movie-param">Language</span>: {{ this.movieData['Language'] }}<br />
+        <span class="movie-param">Country</span>: {{ this.movieData['Country'] }}<br /><br />
+        <!--<mat-divider [inset]="true"></mat-divider>
+        <br />-->
+
+        <span class="movie-awards">IMDb Rating</span>: {{ this.movieData['imdbRating'] }}<br />
+        <span class="movie-awards">IMDb ID</span>: {{ this.movieData['imdbID'] }}<br />
+        <span class="movie-awards">Box Office</span>: {{ this.movieData['BoxOffice'] }}<br />
+        <span class="movie-awards">Awards</span>: {{ this.movieData['Awards'] }}<br /><br />
+        <!--<mat-divider [inset]="true"></mat-divider>
+        <br />-->
+
+        <span class="movie-staff">Directors</span>: {{ this.movieData['Director'] }}<br />
+        <span class="movie-staff">Writers</span>: {{ this.movieData['Writer'] }}<br />
+        <span class="movie-staff">Actors</span>: {{ this.movieData['Actors'] }}<br /><br />
+        <!--<mat-divider [inset]="true"></mat-divider>
+        <br />-->
+        <!--{{ response }}-->
+
+      </p>
+    </mat-tab>
+
+
+    <mat-tab label="Plot">
+      <img alt="Missing the poster picture" src="{{ this.movieData['Poster'] }}" style="float: left;margin: 20px;">
+      <mat-card-subtitle class="movie-title plot-title">Plot of "{{ this.movieData['Title'] }}"</mat-card-subtitle>
+      <p class="movie-data">{{ this.movieData['Plot'] }}<br /><br /><br /><span style="float: right;">© {{ this.movieData['Title'] }} {{ this.movieData['Year'] }}</span></p>
+    </mat-tab>
+  </mat-tab-group>
+
+</mat-card>

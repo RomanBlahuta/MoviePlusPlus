@@ -1,0 +1,28 @@
+<div class="search-container">
+  <h1 *ngIf="!displayData" class="search-heading search-top-heading">Welcome to <strong>Movie<span style="color: forestgreen">++</span></strong>!</h1>
+  <h2 *ngIf="!displayData" class="search-heading search-sub-heading">Enter the title of the movie you are looking for down below!</h2>
+  <input *ngIf="!displayData" type='text' class="form-control movie-input" [(ngModel)]="searchTitle" (input)="onTitleInput()"/>
+
+  <div *ngIf="valid && !displayData" class="recommendation-container">
+    <mat-card class="recommendation">
+
+      <a (click)="onGoToMovie()">
+        <img height="70px" alt="No Poster" src="{{ this.movieObj['Poster'] }}" style="float: left;">
+      </a>
+
+      <div class="fav-btn-container">
+        <button mat-fab color={{btnStatus}} (click)="onFavorite()"><mat-icon>{{btnIcon}}</mat-icon></button>
+      </div>
+
+      <a class="display-movie-info" (click)="onGoToMovie()">
+        <mat-card-title class="rec-info">{{ this.movieObj['Title'] }}, {{ this.movieObj['Released'] }}<br />
+          <span style="font-size: 20px;">{{ this.movieObj['Genre'] }}</span>
+        </mat-card-title>
+      </a>
+
+    </mat-card>
+  </div>
+
+  <button mat-raised-button color="primary" (click)="onGoBack()" *ngIf="displayData" class="back-to-search">Go back to Search</button>
+  <app-moviecard *ngIf="displayData" [movieData]="movieObj" ></app-moviecard>
+</div>

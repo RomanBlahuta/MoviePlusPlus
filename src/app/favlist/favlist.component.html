@@ -1,0 +1,15 @@
+<mat-card class="fav-list-card">
+  <mat-card-title class="fav-list-title">Favourite Movies</mat-card-title>
+  <div class="fav-list" *ngFor="let key of keys">
+
+    <div class="fav-item" *ngIf="faves.hasOwnProperty(key)">
+      <img height="90px" src="{{faves[key]}}" style="float: left; margin: 5px;">
+      <span class="fav-item-title"><br />{{key}}</span>
+      <div class="fav-btn-container">
+        <button mat-fab color="primary" (click)="onDelete(key)"><mat-icon>delete</mat-icon></button>
+      </div>
+    </div>
+
+
+  </div>
+</mat-card>
